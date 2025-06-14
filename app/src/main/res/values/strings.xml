@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">webviewtester</string>
+    <string name="responsive_prompt">Responsive Mode</string>
+</resources>

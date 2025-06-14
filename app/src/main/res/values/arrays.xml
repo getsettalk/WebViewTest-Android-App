@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="responsive_modes">
+        <item>Default</item>
+        <item>Mobile (360px)</item>
+        <item>Tablet (768px)</item>
+        <item>Desktop (1200px)</item>
+    </string-array>
+</resources>

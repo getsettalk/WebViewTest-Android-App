@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"> <!-- Optional: xmlns:tools for tools:targetApi -->
+
+    <!-- Base application theme. -->
+    <style name="Theme.Webviewtester" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- You can add your custom theme attributes here if needed -->
+    </style>
+
+</resources>

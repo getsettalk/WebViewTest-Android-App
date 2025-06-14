@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+
+        android:elevation="4dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="18dp"
+            android:text="WebView Tester"
+            android:textColor="@color/teal_700"
+
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/urlInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Enter website URL (e.g., https://example.com)"
+            android:inputType="textUri"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888"
+            android:layout_marginBottom="14dp" />
+
+        <!-- Switches with some default checked -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+            <Switch
+                android:id="@+id/jsSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="JavaScript"
+                android:checked="true"
+                android:thumbTint="@color/teal_700"
+                android:trackTint="@color/teal_200" />
+            <Switch
+                android:id="@+id/zoomSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Zoom"
+                android:checked="true"
+                android:thumbTint="@color/teal_700"
+                android:trackTint="@color/teal_200" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+            <Switch
+                android:id="@+id/fullScreenSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Full Screen"
+                android:thumbTint="@color/teal_700"
+                android:trackTint="@color/teal_200" />
+            <Switch
+                android:id="@+id/statusBarSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Status Bar"
+                android:checked="true"
+                android:thumbTint="@color/teal_700"
+                android:trackTint="@color/teal_200" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+            <Switch
+                android:id="@+id/darkModeSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dark Mode"
+                android:thumbTint="@color/teal_700"
+                android:trackTint="@color/teal_200" />
+            <Switch
+                android:id="@+id/cacheSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cache"
+                android:checked="true"
+                android:thumbTint="@color/teal_700"
+                android:trackTint="@color/teal_200" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+            <Switch
+                android:id="@+id/fileAccessSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="File Access"
+                android:thumbTint="@color/teal_700"
+                android:trackTint="@color/teal_200" />
+            <Switch
+                android:id="@+id/mixedContentSwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mixed Content"
+                android:thumbTint="@color/teal_700"
+                android:trackTint="@color/teal_200" />
+        </LinearLayout>
+        <Switch
+            android:id="@+id/belowStatusBarSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show WebView Below Status Bar"
+            android:layout_marginBottom="12dp"
+            android:thumbTint="@color/teal_700"
+            android:trackTint="@color/teal_200" />
+
+        <Switch
+            android:id="@+id/statusBarColorSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light Status Bar Text"
+            android:checked="true"
+            android:thumbTint="@color/teal_700"
+            android:trackTint="@color/white"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/userAgentInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Custom User-Agent (optional)"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/jsInjectionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Inject JavaScript (optional)"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="5"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/responsiveSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/responsive_modes"
+            android:prompt="@string/responsive_prompt"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/clearCookiesButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear Cookies/Data"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="8dp" />
+            <Button
+                android:id="@+id/testButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Test Website"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/versionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0.0 (100)"
+            android:textColor="#888"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp" />
+
+
+    </LinearLayout>
+</ScrollView>
