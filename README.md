@@ -29,7 +29,10 @@ A modern Android app to test and preview any website in a customizable WebView e
 
 ## Screenshots
 
-*Add screenshots here if desired.*
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/2b14af8d-aeb4-43bb-9f94-9244a93c0787" alt="Screenshot 1" width="45%" style="display:inline-block; margin-right:10px;" />
+  <img src="https://github.com/user-attachments/assets/5c4e0f1a-0b5b-480a-99a9-af1c6032df4b" alt="Screenshot 2" width="45%" style="display:inline-block;" />
+</p>
 
 ## Requirements
 - Android 6.0 (API 23) or higher
